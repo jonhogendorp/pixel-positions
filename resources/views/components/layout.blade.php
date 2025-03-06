@@ -10,16 +10,23 @@
 </head>
 
 <body>
-    <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
-        <div class="logo">
-            <a href="">
-                <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
-            </a>
-        </div>
-        <div>links </div>
-        <div>create job</div>
-    </nav>
-    <main>{{ $slot }}</main>
+    <div class="px-10">
+        <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+            <div class="logo">
+                <a href="">
+                    <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
+                </a>
+            </div>
+            <div>
+                <a href="#">Jobs</a>
+                <a href="#">Carreers</a>
+                <a href="#">Salaries</a>
+                <a href="#">Companies</a>
+            </div>
+            <div>create job</div>
+        </nav>
+        <main>{{ $slot }}</main>
+    </div>
 </body>
 
 </html>
