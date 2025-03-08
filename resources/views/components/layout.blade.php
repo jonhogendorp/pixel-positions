@@ -9,9 +9,9 @@
     @vite('resources/css/app.css', 'resources/js/app.js')
 </head>
 
-<body>
+<body class="bg-gray-900">
     <div class="px-10">
-        <nav class="flex items-center justify-between p-4 bg-gray-800 text-white">
+        <nav class="flex items-center justify-between py-4 bg-gray-800 text-white border-b border-white/10">
             <div class="logo">
                 <a href="">
                     <img src="{{ Vite::asset('resources/images/logo.svg') }}" alt="">
@@ -25,7 +25,7 @@
             </div>
             <div>create job</div>
         </nav>
-        <main>{{ $slot }}</main>
+        <main class="mt-10 max-w-[986px] mx-auto">{{ $slot }}</main>
     </div>
 </body>
 
