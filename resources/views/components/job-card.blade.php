@@ -5,13 +5,10 @@
         <p>Full-time $60,000</p>
     </div>
     <div class="flex justify-between items-center mt-auto">
-        <div>
-            <a class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-white text-xs transition-colors duration-300"
-                href="#">Tag</a>
-            <a class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-white text-xs transition-colors duration-300"
-                href="#">Tag</a>
-            <a class="bg-white/10 hover:bg-white/25 px-2 py-1 rounded-xl text-white text-xs transition-colors duration-300"
-                href="#">Tag</a>
+        <div class="flex gap-2">
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
+            <x-tag>Tag</x-tag>
         </div>
         <img src="http://placehold.it/42/42" alt="" class="rounded-full">
     </div>
