@@ -20,7 +20,7 @@
         <section>
             <x-section-heading>Tags</x-section-heading>
             <div class="flex mt-6 space-x-1 gap-2">
-                @foreach ($tags as tag)
+                @foreach ($tags as $tag)
                     <x-tag :$tag />
                 @endforeach
             </div>
